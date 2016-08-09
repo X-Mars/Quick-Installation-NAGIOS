@@ -6,8 +6,8 @@ sleep 3
 nagiosdir=`pwd`
 ip=`ip addr |grep inet |egrep -v "inet6|127.0.0.1" |awk '{print $2}' |awk -F "/" '{print $1}'`
 nagios_version=4.2.0
-nagios-plugins_version=2.1.2
-pnp4nagios_sersion=0.6.25
+plugins_version=2.1.2
+pnp4nagios_version=0.6.25
 
 echo "当前目录为:$nagiosdir"
 echo "本机ip为:$ip"
@@ -70,10 +70,10 @@ htpasswd -cmb /usr/local/nagios/etc/htpasswd.users nagiosadmin nagios
 
 echo "安装nagios-plugins"
 sleep 2
-wget http://nagios-plugins.org/download/nagios-plugins-${nagios-plugins_version}.tar.gz
-tar zxvf nagios-plugins-${nagios-plugins_version}.tar.gz
+wget http://nagios-plugins.org/download/nagios-plugins-${plugins_version}.tar.gz
+tar zxvf nagios-plugins-${plugins_version}.tar.gz
 
-cd nagios-plugins-${nagios-plugins_version}
+cd nagios-plugins-${plugins_version}
 
 ./configure --prefix=/usr/local/nagios --with-nagios-user=nagios --with-nagios-group=nagcmd --with-command-user=nagios --with-command-group=nagcmd
 make
@@ -85,11 +85,12 @@ echo "为nagios安装图标pnp4nagios"
 sleep 2
 
 yum install -y perl-Time-HiRes rrdtool  rrdtool-perl
-if [ ! -f pnp4nagios-${zabbix_version}.tar.gz ];then
-wget http://nchc.dl.sourceforge.net/project/pnp4nagios/PNP-0.6/pnp4nagios-${zabbix_version}.tar.gz
-tar zxvf pnp4nagios-${zabbix_version}.tar.gz
+if [ ! -f pnp4nagios-${pnp4nagios_version}.tar.gz ];then
+wget http://nchc.dl.sourceforge.net/project/pnp4nagios/PNP-0.6/pnp4nagios-${pnp4nagios_version}.tar.gz
+fi
+tar zxvf pnp4nagios-${pnp4nagios_version}.tar.gz
 
-cd pnp4nagios-${zabbix_version}
+cd pnp4nagios-${pnp4nagios_version}
 ./configure --prefix=/usr/local/pnp4nagios/ --with-nagios-user=nagios --with-nagios-group=nagcmd
 make all
 make install
