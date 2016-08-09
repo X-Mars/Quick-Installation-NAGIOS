@@ -5,8 +5,8 @@ sleep 3
 
 nagiosdir=`pwd`
 ip=`ip addr |grep inet |egrep -v "inet6|127.0.0.1" |awk '{print $2}' |awk -F "/" '{print $1}'`
-nagios_version=4.1.1
-nagios-plugins_version=2.1.1
+nagios_version=4.2.0
+nagios-plugins_version=2.1.2
 pnp4nagios_sersion=0.6.25
 
 echo "当前目录为:$nagiosdir"
