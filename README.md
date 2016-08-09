@@ -2,8 +2,10 @@
   
 ##nagios安装脚本
   
-###脚本作者:火星小刘 web:www.huoxingxiaoliu.com email:xtlyk@163.com
-
+###脚本作者:火星小刘   
+###web:www.huoxingxiaoliu.com   
+###email:xtlyk@163.com  
+  
 本代码为交互代码，个别地方需要手动输入。  
   
 ####报警邮箱设置方法如下  
