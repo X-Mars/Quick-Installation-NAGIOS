@@ -17,9 +17,10 @@ echo "Hello World" | mail xtlyk@163.com
 ```  
   
 ####更新日志  
-2016.08.09
-1. nagios-4.1.1			升级到	nagios-4.2.0
-2. nagios-plugins-2.1.1	升级到	nagios-plugins-2.1.2
+2016.08.09  
+1. nagios-4.1.1			升级到	nagios-4.2.0  
+2. nagios-plugins-2.1.1	升级到	nagios-plugins-2.1.2  
+  
 2015.12.07  
 1. nagios-4.0.8			升级到	nagios-4.1.1  
 2. nagios-plugins-2.0.3	升级到	nagios-plugins-2.1.1  
