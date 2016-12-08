@@ -5,7 +5,7 @@ sleep 3
 
 nagiosdir=`pwd`
 ip=`ip addr |grep inet |egrep -v "inet6|127.0.0.1" |awk '{print $2}' |awk -F "/" '{print $1}'`
-nagios_version=4.2.3
+nagios_version=4.2.4
 plugins_version=2.1.4
 pnp4nagios_version=0.6.25
 
