@@ -1,24 +1,27 @@
 # Quick-Installation-NAGIOS
   
-##nagios安装脚本
+## nagios安装脚本
   
-###脚本作者:火星小刘   
-###web:www.huoxingxiaoliu.com   
-###email:xtlyk@163.com  
+### 脚本作者:火星小刘   
+### web:www.huoxingxiaoliu.com   
+### email:xtlyk@163.com  
   
 本代码为交互代码，个别地方需要手动输入。  
   
-####报警邮箱设置方法如下  
+#### 报警邮箱设置方法如下  
   
-```bash
-vi /etc/mail.rc  
+```shell
+vi /etc/mail.rc  
 添加你的发件邮箱地址已经smtp，如下  
 set from=xtlyk@163.com smtp=smtp.163.com set smtp-auth-user=xtlyk@163.com smtp-auth-password=000000 smtp-auth=login  
 可以通过一下命令测试  
 echo "Hello World" | mail xtlyk@163.com  
 ```  
   
-####更新日志  
+#### 更新日志  
+2017.04.01  
+1. nagios-4.2.4			升级到	nagios-4.3.1
+
 2016.12.08  
 1. nagios-4.2.3			升级到	nagios-4.2.4
   
