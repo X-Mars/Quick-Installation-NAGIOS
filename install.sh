@@ -162,3 +162,7 @@ echo "安装结束，打开浏览器输入:http://$ip/nagios 访问"
 echo "下面启动sendmail邮件服务,启动较慢,请耐心等待"
 chkconfig sendmail on
 service sendmail start
+
+echo "##############################"
+echo "nagios web默认登陆用户名:nagiosadmin 密码:nagios"
+echo "##############################"
