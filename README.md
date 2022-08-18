@@ -7,6 +7,10 @@
 ### email:xtlyk@163.com  
   
 本代码为交互代码，个别地方需要手动输入。  
+
+### 交流群
+
+<img src="https://github.com/X-Mars/Quick-Installation-NAGIOS/blob/master/images/1.jpg?raw=true" width="25%" height="25%">
   
 #### 报警邮箱设置方法如下  
   
